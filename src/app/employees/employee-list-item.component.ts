@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { EmployeeDetailsDialogComponent } from './employee-details-dialog.component';
 import { Employee } from './employee.module';
 
 @Component({
@@ -32,6 +33,9 @@ export class EmployeeListItemComponent implements OnInit {
   ngOnInit(): void {}
 
   showDetails() {
-    //show modal here
+    this.dialog.open(EmployeeDetailsDialogComponent, {
+      data: this.employee,
+      minWidth: '480px',
+    });
   }
 }

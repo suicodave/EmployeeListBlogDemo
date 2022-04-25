@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeListComponent } from './employee-list.component';
 import { EmployeeListItemComponent } from './employee-list-item.component';
 import { EmployeeFullNamePipe } from './employee-full-name.pipe';
+import { EmployeeDetailsDialogComponent } from './employee-details-dialog.component';
 
 
 
@@ -16,6 +17,7 @@ import { EmployeeFullNamePipe } from './employee-full-name.pipe';
     EmployeeListComponent,
     EmployeeListItemComponent,
     EmployeeFullNamePipe,
+    EmployeeDetailsDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { EmployeeFullNamePipe } from './employee-full-name.pipe';
   exports: [
     EmployeeListComponent,
     EmployeeListItemComponent,
+    EmployeeDetailsDialogComponent,
   ]
 })
 export class EmployeeModule {}
